@@ -5,3 +5,11 @@ function geometryAreaCalculator() {
   const triangleArea = 0.5 * b.value * h.value;
   console.log(triangleArea);
 }
+
+function rectangleAreaCalculator() {
+  const width = document.getElementById("rectangle-width");
+  const lenght = document.getElementById("rectangle-lenght");
+
+  const rectangleArea = width.value * lenght.value;
+  console.log(rectangleArea);
+}
