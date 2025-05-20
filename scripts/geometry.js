@@ -1,9 +1,13 @@
+let areaName = document.getElementById("area-name");
+let areaResult = document.getElementById("area-result");
+
 function geometryAreaCalculator() {
   const b = document.getElementById("triangle-base");
   const h = document.getElementById("triangle-hight");
 
   const triangleArea = 0.5 * b.value * h.value;
-  console.log(triangleArea);
+  areaName.innerText = "Triangle Area: ";
+  areaResult.innerText = triangleArea;
 }
 
 function rectangleAreaCalculator() {
@@ -11,7 +15,8 @@ function rectangleAreaCalculator() {
   const lenght = document.getElementById("rectangle-lenght");
 
   const rectangleArea = width.value * lenght.value;
-  console.log(rectangleArea);
+  areaName.innerText = "Rectangle Area: ";
+  areaResult.innerText = rectangleArea;
 }
 
 function parallelogramAreaCalculator() {
@@ -19,5 +24,6 @@ function parallelogramAreaCalculator() {
   const h = document.getElementById("parallelogram-hight");
 
   const parallelogramArea = b.value * h.value;
-  console.log(parallelogramArea);
+  areaName.innerText = "parallelogram Area: ";
+  areaResult.innerText = parallelogramArea;
 }
