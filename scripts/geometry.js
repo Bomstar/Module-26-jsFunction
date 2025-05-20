@@ -13,3 +13,11 @@ function rectangleAreaCalculator() {
   const rectangleArea = width.value * lenght.value;
   console.log(rectangleArea);
 }
+
+function parallelogramAreaCalculator() {
+  const b = document.getElementById("parallelogram-base");
+  const h = document.getElementById("parallelogram-hight");
+
+  const parallelogramArea = b.value * h.value;
+  console.log(parallelogramArea);
+}
